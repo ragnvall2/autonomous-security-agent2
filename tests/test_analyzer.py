@@ -1,4 +1,8 @@
-from src.security_analyzer import SecurityAnalyzer
+import sys
+import os
+sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
+
+from src.reasoning.security_analyzer import SecurityAnalyzer
 from src.reasoning.llm_engine import LLMEngine
 from src.reasoning.mock_llm_engine import MockLLMEngine
 
